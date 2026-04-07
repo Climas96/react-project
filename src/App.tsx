@@ -8,7 +8,7 @@ const [mostrar,setMostrar] = useState(true);
     
         return (
           <>
-          <input type="checkbox" defaultChecked={mostrar} onChange={e => setMostrar(e.target.checked)}/> Mostrar componente
+          <input type="checkbox" defaultChecked={mostrar} onChange={e => setMostrar(e.target.checked)}/> Nuevo Mostrar componente
 
           {mostrar ? <EjemploUseEffect/> : undefined}
         
