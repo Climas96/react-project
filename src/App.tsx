@@ -5,7 +5,9 @@ function App() {
   
         return (
           <>
-          <h1>Erik Climas Samano</h1>
+          <input type="checkbox" defaultChecked={mostrar} onChange={e => setMostrar(e.target.checked)}/> Nuevo Mostrar componente
+
+          {mostrar ? <EjemploUseEffect/> : undefined}
         
          </>
         );
