@@ -8,7 +8,7 @@ const [clicks,setClicks] = useState(0);
     });
   return (
     <>
-      <h2>EjemploUseEffect</h2>
+      <h2>Erik Climas Samano</h2>
 
       <div><button onClick={() => setClicks(clicks +1)}>me has clickeado {clicks} veces</button></div>
     </>
