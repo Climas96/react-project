@@ -1,6 +1,8 @@
 export const Boton = (props: BotonProps) => {
   return (
-    <button type="button" className="btn btn-primary" onClick={props.onclick}>
+    <button type={props.type ?? 'button'} className="btn btn-primary" onClick={props.onclick}
+    disabled= {props.disabled ?? false}
+    >
       {props.children}
     </button>
   );
@@ -8,5 +10,7 @@ export const Boton = (props: BotonProps) => {
 
 interface BotonProps {
   children: React.ReactNode;
-  onclick(): void;
+  onclick?(): void;
+  type?: 'button' | 'submit'  | 'reset',
+  disabled?: boolean
 }
